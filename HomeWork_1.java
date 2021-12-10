@@ -26,13 +26,13 @@ class HomeWork_1 {
     static void printColor() {
         int value = -5;
         if (value <= 0) {
-        System.out.println("Красный");
+            System.out.println("Красный");
         }
         if (value > 0 && value <= 100) {
-        System.out.println("Желтый");
+            System.out.println("Желтый");
         }
         if (value > 100) {
-        System.out.println("Зелёный");
+            System.out.println("Зелёный");
         }
     }
 
