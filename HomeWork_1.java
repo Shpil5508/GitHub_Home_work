@@ -1,4 +1,9 @@
-<<<<<<< Updated upstream
+/** 
+* Java 1. Homework #1
+*
+* @author Paliev Anton
+* @version 12.12.2021
+*/
 class HomeWork_1 {
     public static void main(String[]args) {
         printThreeWords();
@@ -16,24 +21,17 @@ class HomeWork_1 {
     static void checkSumSing() {
         int a = -1,
             b = 1;
-        /* if (a + b >= 0) {
-        System.out.println("Сумма положительная");
-        } else {
-         System.out.println("Сумма отрицательная");
-        } */
-        System.out.println(a + b >= 0 ? "Сумма положительная" : "Сумма отрицательная"); //очень удобный тернарный оператор
+         System.out.println(a + b >= 0 ? "Сумма положительная" : "Сумма отрицательная");
     }
 
     static void printColor() {
-        int value = -5;
+        int value = 100;
         if (value <= 0) {
-        System.out.println("Красный");
-        }
-        if (value > 0 && value <= 100) {
-        System.out.println("Желтый");
-        }
-        if (value > 100) {
-        System.out.println("Зелёный");
+            System.out.println("Красный");
+        } else if (value <= 100) {
+            System.out.println("Желтый");
+        } else {
+            System.out.println("Зелёный");
         }
     }
 
@@ -42,49 +40,4 @@ class HomeWork_1 {
             b = 4;
         System.out.println(a >= b ? "a >= b" : "a < b");
     }
-=======
-class HomeWork_1 {
-    public static void main(String[]args) {
-        printThreeWords();
-        checkSumSing();
-        printColor();
-        compareNumbers();
-    }
-
-    static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
-
-    static void checkSumSing() {
-        int a = -1,
-            b = 1;
-        /* if (a + b >= 0) {
-        System.out.println("Сумма положительная");
-        } else {
-         System.out.println("Сумма отрицательная");
-        } */
-        System.out.println(a + b >= 0 ? "Сумма положительная" : "Сумма отрицательная"); //очень удобный тернарный оператор
-    }
-
-    static void printColor() {
-        int value = -5;
-        if (value <= 0) {
-        System.out.println("Красный");
-        }
-        if (value > 0 && value <= 100) {
-        System.out.println("Желтый");
-        }
-        if (value > 100) {
-        System.out.println("Зелёный");
-        }
-    }
-
-    static void compareNumbers() {
-        int a = 4,
-            b = 4;
-        System.out.println(a >= b ? "a >= b" : "a < b");
-    }
->>>>>>> Stashed changes
-}
+} 
