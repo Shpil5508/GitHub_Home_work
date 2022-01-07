@@ -97,8 +97,6 @@ class TicTacToe {
     }
     
     boolean isWin(char ch) {
-        // Цикл проверки выигрыша. Если честно, то в Вашей статье этот цикл и описан.
-        // Но я его в голове предварительно таким и представлял. 
        for (int i = 0; i < table.length; i++) {
            if ((table[i][0] == ch && table[i][1] == ch && table[i][2] == ch) ||
                 (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch)) return true;
