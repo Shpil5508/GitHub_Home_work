@@ -11,15 +11,21 @@ public class Main {
         Box<Orange> orangeBox = new Box<>(1.5);
         Box<Apple> appleBox2 = new Box<>(1);
 
-        for (int i = 0; i < 3; i++) {
+        int quantityAll = 3; //сколько фруктов добавить в каждую коробку
+        int quantityApple = 2; //сколько яблок добавить в коробку
+        int quantityOrange = 1; //сколько апельсинов добавить в коробку
+
+        for (int i = 0; i < quantityAll; i++) {
             orangeBox.addFruit(new Orange());
             appleBox.addFruit(new Apple());
             appleBox2.addFruit(new Apple());
         }
-
-        appleBox.addFruit(new Apple());
-        appleBox.addFruit(new Apple());
-        appleBox2.addFruit(new Apple());
+        for (int i = 0; i < quantityApple; i++) {
+            appleBox.addFruit(new Apple());
+        }
+        for (int i = 0; i < quantityOrange; i++) {
+            orangeBox.addFruit(new Orange());
+        }
 
         System.out.println("Масса ящика с яблоками = " + appleBox.getWeight());
         System.out.println("Масса ящика с апельсинами = " + orangeBox.getWeight());
