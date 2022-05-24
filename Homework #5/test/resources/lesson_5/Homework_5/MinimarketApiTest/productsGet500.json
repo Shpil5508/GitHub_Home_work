@@ -1,0 +1,7 @@
+{
+  "timestamp": "${json-unit.ignore}",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "",
+  "path": "/market/api/v1/products"
+}
