@@ -1,24 +1,27 @@
 package lesson_5.Homework_5;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.*;
 
+import java.util.List;
+
 public interface MinimarketApi {
-    @GET("api/v1/categories/{id}")
-    Call<CategoryResult> getCategory(@Path("id") int id);
+    @GET("categories/{id}")
+    Call<CategoryResult> getProductById(@Path("id") long id);
 
-    @GET("api/v1/products")
-    Call<ProductResult500> getProducts();
+    @GET("products")
+    Call<List<Product>> getProducts();
 
-    @POST("api/v1/products")
-    Call<Products> postProduct(@Body Products product);
+    @POST("products")
+    Call<Product> postProduct(@Body Product product);
 
-    @PUT("api/v1/products")
-    Call<Products> putProduct(@Body Products product);
+    @PUT("products")
+    Call<Product> putProduct(@Body Product product);
 
-    @GET("api/v1/products/{id}")
-    Call<Products> getProduct(@Path("id") int id);
+    @GET("products/{id}")
+    Call<Product> getProduct(@Path("id") long id);
 
-    @DELETE("api/v1/products/{id}")
-    Call<Object> deleteProduct (@Path("id") int id);
+    @DELETE("products/{id}")
+    Call<ResponseBody> deleteProduct (@Path("id") long id);
 }

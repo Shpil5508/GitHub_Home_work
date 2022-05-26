@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 public class MinimarketApiTest extends AbstractTest {
     private static MinimarketService service;
 
@@ -15,42 +17,52 @@ public class MinimarketApiTest extends AbstractTest {
     @Test
     @DisplayName("#1 Test GET to ID from category-controller")
     void testGetCategoryId() throws Exception {
-        CategoryResult categoryId = service.getCategory(1);
+        CategoryResult categoryId = service.getProductById(1);
         assertJson(getResource("category200.json"), categoryId);
     }
 
     @Test
-    @DisplayName("#2 Test GET product-controller undocumented, code 500")
+    @DisplayName("#2 Test GET product-controller")
     void testGetProducts() throws Exception {
-        ProductResult500 products = service.getProducts();
-        assertJson(getResource("productsGet500.json"), products);
+        List<Product> products = service.getProducts();
+        assertJson(getResource("arrayProducts.json"), products);
     }
 
     @Test
     @DisplayName("#3 Test POST product in product-controller")
-    void testPostProduct() {
-        Products product = service.postProduct("Halop", 3, "Food");
+    void testPostProduct() throws Exception {
+        Product product = new Product();
+        product.setTitle("Limon");
+        product.setPrice(95);
+        product.setCategoryTitle("Food");
+
+        service.postProduct(product);
+
         System.out.println(SerializeJson.getJson(product));
+        assertJson(getResource("postProduct.json"), product);
     }
 
     @Test
     @DisplayName("#4 Test PUT product in product-controller")
-    void testPutProduct() {
-        Products products = service.putProduct(406, "Banana", 1, "Food");
+    void testPutProduct() throws Exception {
+        Product products = service.putProduct(464, "Banana", 120, "Food");
         System.out.println(SerializeJson.getJson(products));
+
+        assertJson(getResource("putProduct.json"), products);
     }
 
     @Test
     @DisplayName("#5 Test GET product in product-controller")
-    void testGetProduct() {
-        Products products = service.getProduct(406);
+    void testGetProduct() throws Exception {
+        Product products = service.getProduct(464);
+
+        assertJson(getResource("putProduct.json"), products);
     }
 
     @Test
     @DisplayName("#6 Test DELETE created product from product-controller")
     void testDeleteProduct() {
-        Object productDel = service.deleteProduct(409);
-        System.out.println(SerializeJson.getJson(productDel));
-
+        Product productDel = new Product();
+        service.deleteProduct(463);
     }
 }

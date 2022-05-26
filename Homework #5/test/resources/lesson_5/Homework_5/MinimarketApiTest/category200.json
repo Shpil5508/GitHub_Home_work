@@ -261,6 +261,12 @@
       "categoryTitle": "Food"
     },
     {
+      "id": 365,
+      "title": "Яблочко",
+      "price": 300,
+      "categoryTitle": "Food"
+    },
+    {
       "id": 262,
       "title": "Хлеб",
       "price": 300,
@@ -600,6 +606,174 @@
       "id": 402,
       "title": "Bred22222",
       "price": 1,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 405,
+      "title": "Bread",
+      "price": 100,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 417,
+      "title": "Currants",
+      "price": 3599,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 418,
+      "title": "Limes",
+      "price": 823,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 419,
+      "title": "Grapes",
+      "price": 5360,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 424,
+      "title": "Oranges",
+      "price": 9292,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 425,
+      "title": "Cantaloupe",
+      "price": 5441,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 426,
+      "title": "Figs",
+      "price": 8774,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 427,
+      "title": "Jarrahdale pumpkin",
+      "price": 5971,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 428,
+      "title": "Incaberries",
+      "price": 268,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 429,
+      "title": "Incaberries",
+      "price": 8825,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 430,
+      "title": "Oranges",
+      "price": 4235,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 432,
+      "title": "Blueberries",
+      "price": 3409,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 433,
+      "title": "Elderberry",
+      "price": 9341,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 434,
+      "title": "Corella Pear",
+      "price": 5348,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 435,
+      "title": "Dates",
+      "price": 7081,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 436,
+      "title": "Fingerlime",
+      "price": 2020,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 437,
+      "title": "Kiwi Fruit",
+      "price": 1719,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 440,
+      "title": "Cavalo",
+      "price": 6498,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 442,
+      "title": "Dragonfruit",
+      "price": 7181,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 431,
+      "title": "Snowpeas",
+      "price": 5944,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 366,
+      "title": "Яблочко",
+      "price": 300,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 369,
+      "title": "Яблочко",
+      "price": 300,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 444,
+      "title": "Banana",
+      "price": 70,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 445,
+      "title": "Bread",
+      "price": 100,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 446,
+      "title": "Banana",
+      "price": 70,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 450,
+      "title": "Mandarin",
+      "price": 55,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 451,
+      "title": "Mandarin",
+      "price": 55,
+      "categoryTitle": "Food"
+    },
+    {
+      "id": 460,
+      "title": "Banan",
+      "price": 120,
       "categoryTitle": "Food"
     }
   ]
